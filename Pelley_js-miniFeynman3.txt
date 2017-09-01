@@ -1,0 +1,27 @@
+Objects are collections (of properties) which are treated as things in JavaScript. They are distinguished by types.
+
+Properties (written inside curly brackets) are the variables or values which are "stuck to" or attached to objects. 
+Just as real-world objects have shapes, colors, etc., JavaScript objects have characteristics, which the properties define by descriptive names (also known as "keys")
+
+Methods are the name we give to functions (which make the code do something) when they are serving as properties.
+
+* for in loop
+A for... in loop runs through all the properties of an object.
+If John Doe is age 25, a for in loop would look like this:
+
+var person = {fname: 'John', lname: 'Doe', age: 25);
+
+var text = '';
+var x;
+for (x in person) {
+    text += person[x];
+}
+As it runs through it would display John Doe 25 to the console.
+
+* dot notation vs bracket notation
+Dot notation (in this form, for example: myCar.color) is used only if a property is known, or when you want to name and create a property.
+
+Bracket notation can both be used to call or create properties in an object, such as when you're applying a variable to some array's property, 
+since functions often take strings (of text etc.) as arguments 
+Bracket notation uses, and applies strings to, the object(s). 
+
