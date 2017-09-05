@@ -77,14 +77,12 @@ function verifyPassword(user, password) {
   //return true if they match
   //otherwise return false
 
-                      if (user.password) {
-                             if (user.password === password) {
-                                  return true;}
-                              else if (password !== user.password) {
-                                return false;}
+  function verifyPassword(user, password) {
+return user.password === password;
+}
 
 
-                       }           
+                       }
 
 }
 
